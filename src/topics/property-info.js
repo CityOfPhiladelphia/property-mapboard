@@ -3,7 +3,7 @@ export default {
   icon: 'home',
   label: 'Property Info',
   // REVIEW can these be calculated from vue deps?
-  dataSources: ['opa'],
+  dataSources: ['assessmentHist', 'opa'],
   components: [
     {
       type: 'callout',
@@ -80,7 +80,7 @@ export default {
             value: function(state, item){
               return item.market_value
             },
-            
+
           },
           {
             label: 'Taxable Land',
