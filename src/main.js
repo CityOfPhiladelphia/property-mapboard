@@ -24,6 +24,7 @@ import greeting from './general/greeting';
 
 // data sources
 import threeOneOneCarto from './data-sources/311-carto';
+import assessmentHist from './data-sources/assessment-history';
 import condoList from './data-sources/condo-list';
 import crimeIncidents from './data-sources/crime-incidents';
 import divisions from './data-sources/divisions';
@@ -48,6 +49,7 @@ import zoningOverlay from './data-sources/zoning-overlay';
 
 // Topics
 import property from './topics/property';
+import propertyInfo from './topics/property-info';
 import condos from './topics/condos';
 import deeds from './topics/deeds';
 import li from './topics/li';
@@ -86,7 +88,7 @@ mapboard({
     'map'
   ],
   router: {
-    enabled: true
+    enabled: false
   },
   geolocation: {
     enabled: false
@@ -122,6 +124,7 @@ mapboard({
   greeting,
   dataSources: {
     threeOneOneCarto,
+    assessmentHist,
     condoList,
     crimeIncidents,
     divisions,
@@ -145,14 +148,15 @@ mapboard({
     // neighboringProperties,
   },
   topics: [
-    property,
-    condos,
-    deeds,
-    li,
-    zoning,
+    propertyInfo,
+    // property,
+    // condos,
+    // deeds,
+    // li,
+    // zoning,
     // polling,
     // rcoTopic,
-    nearby
+    // nearby
   ],
   components: [
     {
