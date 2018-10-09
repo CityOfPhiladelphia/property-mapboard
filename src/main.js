@@ -1,10 +1,10 @@
 /*
-   _____   __  .__
-  /  _  \_/  |_|  | _____    ______
- /  /_\  \   __\  | \__  \  /  ___/
-/    |    \  | |  |__/ __ \_\___ \
-\____|__  /__| |____(____  /____  >
-        \/               \/     \/
+ _________                                     __
+\______   \_______  ____ ______   ____________/  |_ ___.__.
+ |     ___/\_  __ \/  _ \\____ \_/ __ \_  __ \   __<   |  |
+ |    |     |  | \(  <_> )  |_> >  ___/|  | \/|  |  \___  |
+ |____|     |__|   \____/|   __/ \___  >__|   |__|  / ____|
+                         |__|        \/             \/
 */
 
 import accounting from 'accounting';
@@ -123,27 +123,27 @@ mapboard({
   transforms,
   greeting,
   dataSources: {
-    threeOneOneCarto,
+    // threeOneOneCarto,
     assessmentHist,
-    condoList,
-    crimeIncidents,
-    divisions,
-    dorCondoList,
-    dorDocuments,
-    elections,
-    liBusinessLicenses,
-    liInspections,
-    liPermits,
-    liViolations,
-    nearbyZoningAppeals,
+    // condoList,
+    // crimeIncidents,
+    // divisions,
+    // dorCondoList,
+    // dorDocuments,
+    // elections,
+    // liBusinessLicenses,
+    // liInspections,
+    // liPermits,
+    // liViolations,
+    // nearbyZoningAppeals,
     opa,
-    rco,
-    regmaps,
-    vacantIndicatorsPoints,
-    zoningAppeals,
-    zoningBase,
-    zoningDocs,
-    zoningOverlay,
+    // rco,
+    // regmaps,
+    // vacantIndicatorsPoints,
+    // zoningAppeals,
+    // zoningBase,
+    // zoningDocs,
+    // zoningOverlay,
     // charterSchools,
     // neighboringProperties,
   },
