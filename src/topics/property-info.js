@@ -1,3 +1,5 @@
+import transforms from '../general/transforms';
+
 export default {
   key: 'propertyInfo',
   icon: 'home',
@@ -60,16 +62,6 @@ export default {
         id: 'valueHist',
         fields: [
           {
-            label: 'Date',
-            value: function(state, item){
-              return item.permitissuedate
-            },
-            nullValue: 'no date available',
-            transforms: [
-              'date'
-            ]
-          },
-          {
             label: 'Year',
             value: function(state, item){
               return item.year
@@ -80,30 +72,32 @@ export default {
             value: function(state, item){
               return item.market_value
             },
-            
+            transforms: [
+              'currency'
+            ]
           },
           {
             label: 'Taxable Land',
             value: function(state, item){
-              return item.taxable_land
-            }
+              return transforms.currency.transform(item.taxable_land)
+            },
           },
           {
             label: 'Taxable Improvement',
             value: function(state, item){
-              return item.taxable_building
-            }
+              return transforms.currency.transform(item.taxable_building)
+            },
           },
           {
             label: 'Exempt Land',
             value: function(state, item){
-              return item.exempt_land
-            }
+              return transforms.currency.transform(item.exempt_land)
+            },
           },
           {
             label: 'Exempt Improvement',
             value: function(state, item){
-              return item.exempt_building
+              return transforms.currency.transform(item.exempt_building)
             }
           },
         ],

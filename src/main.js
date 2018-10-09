@@ -88,7 +88,7 @@ mapboard({
     'map'
   ],
   router: {
-    enabled: false
+    enabled: true
   },
   geolocation: {
     enabled: false

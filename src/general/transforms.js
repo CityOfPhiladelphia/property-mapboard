@@ -10,7 +10,11 @@ export default {
     // this is the function that gets called to perform the transform
     transform: function (value, globals) {
       // var accounting = globals.accounting;
-      return accounting.formatMoney(value);
+      if (value != 0) {
+        return accounting.formatMoney(value);
+      } else {
+        return "$0";
+      }
     }
   },
   date: {
