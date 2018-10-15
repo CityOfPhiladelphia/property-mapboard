@@ -158,7 +158,6 @@ export default {
     {
       type: 'vertical-table',
       slots: {
-        title: 'Sales Details',
         fields: [
           {
             label: 'OPA Account #',
